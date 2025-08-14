@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립 리펙토링링</title>
+    <style>
+         table{border:1px solid #000;border-collapse:collapse;}
+        table{border:1px solid #000;padding: 5px; text-align: center ;}
+    </style>
+    
+</head>
+<body>
+    <table>
+        <h1>출석<div id="clock"></div></h1>
+       <table>
+        <colgroup>
+          <col style="width:100px;">
+          <col style="">
+        </colgroup>
+        <tr>
+            <td>no</td>
+            <td >이름</td>
+        </tr>
+     <!-- 문서내 js -->
+      <script>
+        let  myname=prompt();
+        for(let hakbun =1; hakbun <=14; hakbun++){
+            document.write("<tr><td>"+hakbun+"</td><td></td></tr><tr>")
+        }
+       document.getElementById("mynamepo5").innerHTML=myname;
+      </script>
+      </table>
+      <script>
+        /*
+         let bunho01=1; //값을 할당 ,변수의 자료형 숫자형
+       console.log("bunho01:");
+          console.log
+          (typeof bunho01)  
+        let bunho02="1";// 값을 문자로 할당, 변수의 자료형 문자형
+         console.log(typeof bunho02);
+       // for(초기값.최종값.증가값);*/
+            
+       let myname =prompt();
+        for(let hakbun =1; hakbun <=14; hakbun++);
+        {
+           document.write("<tr><td>"+hakbun+"</td><td jd='mynampo"+hakbun+"><</td></tr>");
+        }
+        default.getElementById("'mynampo02").innerHTML=myname;
+      </script>
+       
+
+ <script src="테스트.js"></script>
+
+
+</body>
+</html>
